@@ -1,12 +1,4 @@
 % (c) 2018 Danh DOAN <sgn.danh@gmail.com>
-% (c) 2009-2010 George R. Louthan IV <georgerlouth@nthefourth.com>
-%       http://georgerloutha.nthefourth.com
-% (c) 2007 Todd C. Miller <Todd.Miller@courtesan.com>
-%       http://www.gratisoft.us/todd/
-% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com>
-%       http://www.davidgrant.ca
-% (c) 2002 Matthew Boedicker <mboedick@mboedick.org>
-%       http://mboedick.org
 %
 % This work is licensed under the Creative Commons Attribution-ShareAlike 3.0
 % Unported License. To view a copy of this license, visit
@@ -17,79 +9,151 @@
 
 \documentclass[letterpaper,11pt]{article}
 \usepackage[pagesetup]{tucv}
-\fancyfoot[C]{Name - Resume \thepage}
+\usepackage[pdfborder={0 0 0}]{hyperref}
+\fancyfoot[C]{Danh DOAN - Résumé - Page \thepage}
+
+\NewDocumentCommand\email{m}{\href{mailto:#1}{#1}}
+\RenewDocumentCommand\resentry{O{0pt}mm}{
+    \begin{tabular*}{0.9\textwidth}[t]{@{\hspace{#1}}
+            p{5in-#1}@{\extracolsep{\fill}}p{1.0in}}
+        \raggedright #2 & #3
+        \tabularnewline
+    \end{tabular*}
+}
+\def\Plus{\texttt{+}}
+\def\Minus{\texttt{-}}
+\def\cplusplus{C\Plus\Plus}
 
 \begin{document}
 
 % Page heading and name/contact info table
 \begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
-\textbf{\Large Sample Resume - tucv class}  & Phone number\\
-Address &  Email address \\
-Address 2 & URL \\
+  \multicolumn{2}{c}{\textbf{\Large Danh DOAN}}\\
+  Ho Chi Minh city & \Plus84\Minus90\Minus651\Minus7911\\
+  Vietnam & \email{sgn.danh@gmail.com}\\
 \end{tabular*}
 
+\begin{center}
+  \Large Software Developer
+\end{center}
+
 % Resume section heading
-\resheading{Objective}
+\resheading{Highlights of Qualifications}
 \begin{itemize}
 % This is the freest form resume entry available. It's basically just text.
-\item[] \resentrysinglecol{I want to do stuff.}
+\item \resdesc{C}{highly fluent, occasionally used at work.}
+\item \resdesc{\cplusplus{}}{highly fluent, used everyday at work, home in last
+5 years.}
+\item \resdesc{git}{fluent enough to support other colleagues recovering from
+  most of disasters.}
+\item \resdesc{Linux}{proficient, having used full time at home, having
+  experiment with different shell, tiling window manager, and Emacs.}
+\end{itemize}
+
+\resheading{Software Development Experience}
+\begin{itemize}
+\item[]
+% Top-level entry for an employer, providing employer, location, and description
+% fields:
+\resemployer[Software Engineer]{\href{https://www.luxoft.com/}{Luxoft Vietnam}}
+{Ho Chi Minh, Vietnam}
+% Indented entry for a job, providing title, start date, end date, and
+% description fields:
+  \resjob[Developing HMI model/view for cars built by a Korean corporation.\\]
+         {Continental GmbH.'s DN8 dashboard}{Present}{Aug. 2018}
+  \resjob[Maintain \cplusplus{} widget and animation layer for cars built by a Germany
+    corporation. See my job at Informa Solutions below.\\]
+         {Continental GmbH.'s MQB dashboard}{Aug. 2018}{Jan. 2018}
+
+\resemployer[Software Engineer (on assignment from Luxoft Vietnam)]
+            {\href{http://www.informa.com.sg/}{Informa Solutions}}{Singapore}
+  \resjob[Maintain \cplusplus{} widget and animation layer for cars built by a Germany
+    corporation.
+    \begin{itemize}
+    \item Add features into existing widget and animation upon request
+    \item Corporate with model/view team to investigate and fix bug
+    \item Make some small shell (run on git bash on Windows), and groovy (for
+      Jenkins) scripts to automate the testing tasks.
+    \item Technology: OSEK, \cplusplus{}, Microsoft Visual Studio, git, Jenkins
+    \end{itemize}
+  ]{Continental GmbH's MQB dashboard}{Dec. 2017}{April 2017}
+
+\resemployer[Software Engineer]{\href{https://www.luxoft.com/}{Luxoft Vietnam}}
+{Ho Chi Minh, Vietnam}
+  \resjob[Mentoring Luxoft's new hire, who had just graduated from university.]
+    {Luxoft Internal Project}{March 2017}{April 2016}
+  \resjob[Develop HMI system for car built by a Korean corporation.
+    \begin{itemize}
+    \item Joined in last phase of development
+    \item Run system integration testing
+    \item Fix minor bugs
+    \item Used technology: \cplusplus{}, xml, Perforce p4
+    \end{itemize}
+  ]{Harman-Becker}{March 2016}{Nov. 2015}
+
+\resemployer[Software Engineer]{\href{https://www.fpt-software.com/}{FPT
+    Software}}{Ho Chi Minh, Vietnam}
+\resjob[Develop software to process RTP stream into segmented video stream.
+  \begin{itemize}
+  \item Used \cplusplus{}11 and boost to develop a system to process
+    RTP stream which received from program provider (HBO, CNN,
+    etc...) by blacking out, filtering advertisement scene (to
+    replace it later), packetising, encrypting (with AES\Minus{}256),
+    recording in real\Minus{}time to a format conformed with DASH
+    and/or HLS standard.
+  \item Used HTML5, and JS to build some small webpages to display
+    current state of above system.
+  \item Used \cplusplus{}11, and boost to build a basic web\Minus{}server
+    to host above webpages.
+  \item Used Ruby to build a dummy cache server to reduce
+    workload for the above web\Minus{}server (which ties to the Video
+    Processing System).
+  \item Technology: \cplusplus{}11, Boost, Ruby Sinatra, DASH, HLS, RHEL, hardware AES
+    encryption (via libcrypto).
+  \end{itemize}
+]{DirecTV}{Oct. 2015}{Nov 2013}
 \end{itemize}
 
 \resheading{Education}
 \begin{itemize}
 \item[]
 % The school entry provides name and location fields
-    \resschool{School Name}{Location}
+    \resschool{FPT University}{Ho Chi Minh, Vietnam}
 % The degree entry is indented one level and provides a degree, major, date and
 % optional notes field.
-        \resdegree[Notes]{Degree}{Major}{Date}
-        \resdegree{Degree}{Major}{Date}
-\item[]
-% The school entry with the notes field:
-    \resschool[Notes about school]{School Name}{Location}
+        \resdegree[Graduated as good student]{B.Eng.}{Software Engineer}{Sept. 2013}
 % This is a two-column entry, indented one level and providing a text field and
 % date field.
-        \ressubentry{Certificate, etc.}{Date}
+%        \ressubentry{Certificate, etc.}{Date}
 \end{itemize}
-\resheading{Academics}
-    \begin{itemize}
+%%\resheading{Academics}
+%%    \begin{itemize}
 % This provides a top-level bold item and a description field.
-    \item[] \resdesc{Instructor}{Course 1, Course 2}
-    \item[] \resdesc{Teaching Assistant}{Course 1}
-    \item[] \resdesc{Referee}{Journal 1, Conference 1}
-    \item[] \resdesc{Information Assurance Coursework}{Course 1, Course 2}
-\end{itemize}
-
-\resheading{Employment History}
-\begin{itemize}
-\item[]
-% Top-level entry for an employer, providing employer, location, and description
-% fields:
-\resemployer[Brief description of employer]{Employer name}{Location}
-% Indented entry for a job, providing title, start date, end date, and
-% description fields:
-    \resjob[Description of job]{Job title}{Start}{End}
-\end{itemize}
+%%     \item[] \resdesc{Instructor}{Course 1, Course 2}
+%%     \item[] \resdesc{Teaching Assistant}{Course 1}
+%%     \item[] \resdesc{Referee}{Journal 1, Conference 1}
+%%     \item[] \resdesc{Information Assurance Coursework}{Course 1, Course 2}
+%% \end{itemize}
 
 % This is a section for conferences.
-\resheading{Conferences}
-\begin{itemize}
-    % Major conference entry: provides name and role fields
-    \item[] \resconference{Major conference name}{Role (dates)}
-    % Subconference entry (e.g. workshop, session, etc.): provides name and role
-    % fields.
-        \ressubconference{Workshop or session name}
-        {Role (dates)}
-\end{itemize}
+%% \resheading{Conferences}
+%% \begin{itemize}
+%%     % Major conference entry: provides name and role fields
+%%     \item[] \resconference{Major conference name}{Role (dates)}
+%%     % Subconference entry (e.g. workshop, session, etc.): provides name and role
+%%     % fields.
+%%         \ressubconference{Workshop or session name}
+%%         {Role (dates)}
+%% \end{itemize}
 
 % This is a section for publications
 % In a future version, BiBTeX integration is probably a desired feature, but
 % for now there is just a text entry type called resbib.
-\footnotetext[1]{Denotes a peer-reviewed publication}
-\resheading{Publications and Presentations}
-\begin{itemize}
-% This item provides article title (bolded) and rest-of-citation fields.
-\item[] \resbib{``Article title''\footnotemark[1]}{Paper at Conference, Year.
-                Authors.}
-\end{itemize}
+%% \footnotetext[1]{Denotes a peer-reviewed publication}
+%% \resheading{Publications and Presentations}
+%% \begin{itemize}
+%% % This item provides article title (bolded) and rest-of-citation fields.
+%% \item[] \resbib{``Article title''\footnotemark[1]}{Paper at Conference, Year.
+%%                 Authors.}
+%% \end{itemize}
 \end{document}
