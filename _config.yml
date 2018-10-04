@@ -1,16 +1,16 @@
 # Site settings
-title: (my-blog)
-description: "A simple blog"
-url: "https://gjhenrique.com"
+title: "(blog 'sgn-danh)"
+description: "My name is Danh"
+url: "https://congdanhqx.gitlab.io"
 author:
-  name: "Guilherme Henrique"
-  email: "gjhenrique@gmail.com"
-  url: "https://gjhenrique.com"
+  name: "Danh DOAN"
+  email: "sgn.danh@gmail.com"
+  url: "https://congdanhqx.gitlab.io"
 
 # Build settings
 baseurl: / # Change this to your relative path (ex: /blog/), or leave just a /
-github: https://github.com/gjhenrique
-gitlab: https://gitlab.com/gjhenrique
+github: https://github.com/congdanhqx
+gitlab: https://gitlab.com/congdanhqx
 markdown: kramdown
 source: .
 destination: ./_site

@@ -58,3 +58,5 @@ _posts
 .timestamps/
 /res/*
 vendor
+.bundle
+.npm_cache

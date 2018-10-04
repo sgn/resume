@@ -1,6 +1,6 @@
-(defun zezin-set-posts-info (org-path posts-path res-path)
+(defun sgn/set-posts-info (org-path posts-path res-path)
   (setq org-publish-project-alist
-        `(("org-zezin"
+        `(("org-danh"
            :base-directory ,org-path
            :base-extension "org"
            :publishing-directory ,posts-path
@@ -12,25 +12,12 @@
            :with-toc nil
            :section-numbers nil
            :table-of-contents nil
-           :author "Guilherme Henrique"
-           :email "gjhenrique@gmail.com")
-          ("org-static-zezin"
+           :author "Danh DOAN"
+           :email "sgn.danh@gmail.com")
+          ("org-static-danh"
            :base-directory ,org-path
            :base-extension "css\\|js\\|png\\|jpg\\|ico\\|gif\\|pdf\\|mp3\\|flac\\|ogg\\|swf\\|php\\|markdown\\|md\\|html\\|htm\\|sh\\|xml\\|gz\\|bz2\\|vcf\\|zip\\|txt\\|tex\\|otf\\|ttf\\|eot\\|rb\\|yml\\|htaccess\\|gitignore\\|svg"
            :publishing-directory ,res-path
            :recursive t
            :publishing-function org-publish-attachment)
-          ("zezin" :components ("org-zezin" "org-static-zezin")))))
-
-;; Shinning face
-(defface shinning-face
-  '((t (:background "white" :foreground "red")))
-  "Face to highlight the Axe word")
-
-(defun axe-highlight ()
-  (font-lock-add-keywords nil
-			  '(("\\<\\(Axe\\|axe\\)\\>" 1
-			     'shinning-face t))))
-
-(add-hook 'ruby-mode-hook 'axe-highlight)
-(add-hook 'python-mode-hook 'axe-highlight)
+          ("danh" :components ("org-danh" "org-static-danh")))))
