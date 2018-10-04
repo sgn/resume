@@ -1,6 +1,5 @@
 stages:
   - build-org
-  - filter-css-classes
   - publish
 
 org-generation:
@@ -21,27 +20,13 @@ org-generation:
     paths:
       - _posts
       - res
+      - _assets/css/syntax.scss
   script:
     - emacs -batch -q -l export.el -f org-publish-with-different-timestamp-directory
+    - syntax-extractor/cssminify.sh
     # Copy elpa packages to current directory for cache
     - cp -rf /root/.emacs.d/elpa/ .
   stage: build-org
-
-css-theme:
-  image: node:6.11.3-alpine
-  cache:
-    key: node-libraries
-    paths:
-      - .npm_cache/
-  before_script:
-    - npm config set cache $(pwd)/.npm_cache
-    - cd syntax-extractor && npm install && cd ..
-  script:
-    - node syntax-extractor/index.js dracula
-  artifacts:
-    paths:
-      - _assets/css/syntax.scss
-  stage: filter-css-classes
 
 pages:
   image: ruby:2.4-alpine3.6

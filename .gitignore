@@ -60,3 +60,4 @@ _posts
 vendor
 .bundle
 .npm_cache
+patterns.sed
