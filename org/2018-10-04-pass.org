@@ -1,0 +1,37 @@
+#+BEGIN_EXPORT html
+---
+layout: post
+title: pass
+comments: false
+categories:
+  - tips
+tags:
+  - password
+  - unix
+  - commandline
+---
+#+END_EXPORT
+#+OPTIONS: ^:nil
+
+I've started to use [[https://www.passwordstore.org/][pass]]
+([[https://wiki.archlinux.org/index.php/pass][on ArchWiki]])
+to manage my password.
+
+IMHO, this tool is far better than other password manager that I've used.
+The reasons are listed here, in no particular order:
+
+- It's easy to use with cli, and dmenu. It has some GUI tools, but I haven't
+  tried, yet. The Android one is very good to my need, though.
+- =pass= uses one file per entry, with =git= intergration, it's easy to
+  synchronise password between multiple devices, check password history.
+  We'll just need to set up a central git repository in local computer with:
+#+BEGIN_SRC shell :exports result
+# init common repository
+mkdir ~/.cache/pass.git && git -C ~/.cache/pass.git init --bare
+#+END_SRC
+Then, we can do normal git workflow with the repo, whenever we make some changes
+into the tracked password store, =pass= will automatically commit the change
+into git. Of course, we can clone directly from =~/.password-store/git=, but
+it's harder to push back the change to the computer.
+- passwords are generated and encrypted by =gpg=. It's not that hard to setup
+  your =gpg= key-pairs.
