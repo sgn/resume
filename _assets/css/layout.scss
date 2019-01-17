@@ -105,6 +105,7 @@
 
 .fixed {
   position: fixed;
+  width: 100%;
   @media (min-width: 940px) {
     position: static;
   }
@@ -117,7 +118,7 @@
 }
 
 #header {
-  text-align: center;
+	text-align: center;
   padding: 24px 0;
   position: relative;
   a {
@@ -135,11 +136,11 @@
     font-weight: 600;
   }
   &:after {
-    display: block;
+  	display: block;
     content: '';
     width: 5rem;
     height: 1px;
-    margin: 13px auto 23px auto;
+    margin: 23px auto;
     background-color: lighten($text-color, 70%);
   }
 }
@@ -198,6 +199,11 @@ img[title="Emerald"] {
     box-shadow: 0 2px 6px #ddd;
   }
 
+code {
+  color: lighten($text-color, 35%);
+  background-color: lighten($background-color, 35%);
+}
+
 /* Set the vertical rhythm (and padding-left) for lists inside post content */
 
 .content ul, .content ol {
@@ -246,22 +252,4 @@ footer {
   color: $background-color;
   text-align: center;
   padding: 0.6667em 0;
-}
-
-#icons a{
-  color: $main-color;
-  font-size: 1.3em;
-}
-
-.figure {
-  // Image Caption
-  p:last-child {
-    text-align: center;
-    font-style: italic;
-    margin: auto;
-    width: 80%;
-    font-size: 0.95em;
-    margin-bottom: 1em;
-    margin-top: -1em;
-  }
 }

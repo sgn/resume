@@ -1,32 +1,5 @@
 stages:
-  - build-org
   - publish
-
-org-generation:
-  image:
-    name: iquiw/alpine-emacs
-  before_script:
-    - apk update
-    - apk add graphviz
-    - apk add ttf-freefont
-    # If cache succeeded, copy to emacs home
-    - if [ -d elpa ]; then cp -rf elpa /root/.emacs.d; fi
-  cache:
-    key: org-files
-    paths:
-      - .timestamps
-      - elpa/
-  artifacts:
-    paths:
-      - _posts
-      - res
-      - _assets/css/syntax.scss
-  script:
-    - emacs -batch -q -l export.el -f org-publish-with-different-timestamp-directory
-    - syntax-extractor/cssminify.sh
-    # Copy elpa packages to current directory for cache
-    - cp -rf /root/.emacs.d/elpa/ .
-  stage: build-org
 
 pages:
   image: ruby:2.4-alpine3.6

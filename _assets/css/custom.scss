@@ -1,28 +1,3 @@
 /*- Custom style -*/
 
 // -- Put custom style under this point -- //
-.underline {
-    text-decoration: underline;
-}
-
-.org-src-container {
-    overflow-y: auto;
-    margin-bottom: 2em;
-    padding: 0 1em;
-    font-size: 0.9em;
-}
-
-.org-src-container + .org-src-container {
-    margin-top: -1.5em;
-}
-
-#icons {
-  a + a  {
-    margin-left: 20px;
-  }
-}
-
-// Workaround to hide figure_numbers in captions
-.figure-number {
-    display: none;
-}
