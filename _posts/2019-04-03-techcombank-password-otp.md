@@ -43,15 +43,15 @@ TechComBank thông báo họ làm như vậy là để tuân thủ quyết đị
   người dùng không cần động tay động chân để lấy OTP và nhập OTP cho giao dịch.
   Người dùng nhập 1 mã-4-số-cố-định-khi-thiết-lập-SmartOTP để thực hiện giao
   dịch. Nghĩa ban đầu của One-Time-Password đã biến mất.
-  
+
   Đối chiếu với **Phụ lục 2** của Quyết định QĐ-630/2017 của Ngân hàng Nhà nước
   Việt Nam mà TCB viện dẫn, **SmartOTP** của TechComBank hoàn toàn không có bước
   *khách hàng nhập mã OTP trên giao diện thanh toán trực tuyến* của các giải
   pháp từ 1 đến 6. **SmartOTP** không yêu cầu *phản hồi trực tiếp qua kênh đã
   kết nối* để được xếp vào giải pháp số 7, giải pháp số 8, 9 và 10 thì khỏi phải bàn.
-  
+
   Tóm lại **SmartOTP** của TechComBank là **NoOTP**.
-  
+
 - *Lý giải từ TCB: Người khác cần có chiếc điện thoại và mã 4 số passcode để
   giao dịch!!* Chắc anh chị này chưa nghe nói đến Virus! Hơn nữa, 4 số passcode
   này hoàn toàn không khó tìm ra. Chỉ cần xài một thời gian ngắn,
@@ -84,7 +84,7 @@ gói hỗ trợ khi sử dụng phần mềm).
 - Hỗ trợ token vật lý như trước đây, tuỳ vào nhu cầu của khách hàng mà có thể
   sử dụng giải pháp số 5 (chỉ sinh TOTP như RSA SecurID),
   hoặc giải pháp số 6 (như của HSBC).
-  
+
 - Hỗ trợ FIDO/U2F hoặc/và FIDO2/WebAuthn (giải pháp số 9),
 đây là giải pháp tốt nhất vì 1 thiết bị có thể sử dụng cho nhiều trang web,
 phần mềm khác nhau.
@@ -106,7 +106,11 @@ ký tự đặc biệt:
   không giúp tăng độ an toàn cho mật khẩu, ngược lại, quy định này giảm
   số lượng tổ hợp mật khẩu hợp lệ => giảm thời gian tấn công vét cạn,
   nhưng lại cho phép những mật khẩu tồi như `P@ssw0rd` lọt sổ.
-  Mời đọc thêm [nghiên cứu của MicroSoft][6]
+  Mời đọc thêm [nghiên cứu của Microsoft][6].
+  Với mình thì cái này không phải vấn đề quá lớn,
+  vì mình dùng phần mềm để quản lý mật khẩu (mọi người cũng nên sử dụng
+  ngay đi, LastPass, 1Password, Keepass, pass, etc...),
+  vấn đề chỉ xảy ra khi bị giới hạn cận trên của chiều dài mật khẩu.
   * Cùng với quy định giới hạn từ 6 đến 8 ký tự, số lượng mật khẩu hợp lệ
   tổng cộng là: 3.295.982.584.840.192, nhỏ hơn nhiều so với việc cho phép sử
   dụng mật khẩu tự do, với yêu cầu độ dài tối thiểu, cộng với cấm sử dụng
