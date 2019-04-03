@@ -1,8 +1,13 @@
 /* -- General Layout -- */
 
+/* Required for footer to stick to the bottom */
+html, body {
+	height: 100%;
+}
+
 /* Navigation */
 
-#nav, #nav-left { 
+#nav, #nav-left {
   a {
     display: block;
     color: $background-color;
@@ -247,7 +252,16 @@ code {
 
 /* Footer */
 
+#wrap {
+	min-height:100%;
+	position:relative;
+	padding-bottom: 105px;
+}
+
 footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
   background-color: $main-color;
   color: $background-color;
   text-align: center;

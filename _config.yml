@@ -1,14 +1,14 @@
 # Site settings
-title: "(blog 'sgn-danh)"
+title: "(blog 'danh)"
 description: "My name is Danh"
-url: "https://congdanhqx.gitlab.io"
+url: "https://danh.dev"
 author:
   name: "Danh DOAN"
-  email: "sgn.danh@gmail.com"
-  url: "https://congdanhqx.gitlab.io"
+  email: "congdanhqx@gmail.com"
+  url: "https://danh.dev"
 
 # Build settings
-baseurl: / # Change this to your relative path (ex: /blog/), or leave just a /
+baseurl: /
 github: https://github.com/congdanhqx
 gitlab: https://gitlab.com/congdanhqx
 markdown: kramdown
@@ -17,7 +17,7 @@ destination: ./_site
 permalink: /:year-:month-:day-:title.html
 paginate: 8
 paginate_path: /page:num/
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-assets
 exclude: [syntax-extractor, org, vendor]
