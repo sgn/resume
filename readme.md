@@ -1,5 +1,6 @@
 ---
 layout: post
+permalink: /about.html
 title: About this blog
 comments: false
 categories:
