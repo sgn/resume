@@ -2,14 +2,14 @@ stages:
   - publish
 
 pages:
-  image: ruby:2.4-alpine3.6
+  image: ruby:2.6-alpine3.9
   cache:
     key: jekyll
     paths:
       - .bundle_cache/
   before_script:
     - apk update
-    - apk add build-base
+    - apk add --no-cache build-base
     - bundle install --path .bundle_cache/
   script:
     - JEKYLL_ENV=production bundle exec jekyll build -d public
