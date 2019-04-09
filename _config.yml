@@ -10,7 +10,7 @@ author:
 # Build settings
 baseurl: /
 github: https://github.com/congdanhqx
-gitlab: https://gitlab.com/congdanhqx
+gitlab: https://gitlab.com/zdtcd
 markdown: kramdown
 source: .
 destination: ./_site
