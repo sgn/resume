@@ -9,10 +9,11 @@ pages:
       - .bundle_cache/
   before_script:
     - apk update
-    - apk add --no-cache build-base
+    - apk add --no-cache build-base curl
     - bundle install --path .bundle_cache/
   script:
     - JEKYLL_ENV=production bundle exec jekyll build -d public
+    - curl -o public/danh.pdf https://gitlab.com/zdtcd/resume/uploads/754362b184fd3100b06b829f6877dce5/resume.pdf
   artifacts:
     paths:
       - public
