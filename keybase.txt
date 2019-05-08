@@ -1,0 +1,84 @@
+---
+layout: null
+permalink: /.well-known/keybase.txt
+---
+
+==================================================================
+https://keybase.io/zdtcd
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://danh.dev
+  * I am zdtcd (https://keybase.io/zdtcd) on keybase.
+  * I have a public key with fingerprint 85F0 E2BD 30F2 2A9E E94A  4092 7D95 3879 560F 17C2
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01010e13fb1e5cb36468ad12c286145a5e49a6940647dc11a19f71c5d883680db5c70a",
+      "fingerprint": "85f0e2bd30f22a9ee94a40927d953879560f17c2",
+      "host": "keybase.io",
+      "key_id": "7d953879560f17c2",
+      "kid": "01010e13fb1e5cb36468ad12c286145a5e49a6940647dc11a19f71c5d883680db5c70a",
+      "uid": "45b8159adb8e5f865d5171c18b532a19",
+      "username": "zdtcd"
+    },
+    "merkle_root": {
+      "ctime": 1557359697,
+      "hash_meta": "f504e200d1b319fd98e8c8368696cd030e58b0f31d8ec777fb27da085ebf32e3",
+      "seqno": 5332332
+    },
+    "revoke": {
+      "sig_ids": [
+        "9f23a0ba88682149ab5e4694f4f508880cd816efe2d4c59af91de0a9a52e98420f"
+      ]
+    },
+    "service": {
+      "hostname": "danh.dev",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1557359691,
+  "expire_in": 157680000,
+  "prev": "167ccd1d8ba4e14dba25f55f1df7d287b99e0a56e3c494cac3be06abb424f8c9",
+  "seqno": 7,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owGtk11oHFUUx3djYmKhthRNUSnasZaKsb13Zu7MvdtWUPKgoJYUitAmbu/HubvT
+JDubmcma3ZAU0oBKEev3g4pdNamytAhtzYNWoqiktoRWKdpKW1ErxuBHwYcqBb0T
+WgTx0ZmBYe78zzn/8zv37ll8TaYt+/TeP+blizMT2WNzItP9RV9h2BKhqlq5YasX
+Fl7QpyBO8r2BsnIWwuYG7GiBgUjheK5HucK2tKmHXcIJuIx7zEWe6yuJMcdM+1gS
+RanjUaQEkT7iVoelg1IBonIUlBKTlhKNwBbKQdq2OQNgLncRs33FiEN9RjyksS9t
+E1gM4zTCmBM8hrVBaNbMR37B3n/o/2ffgwvpXCIoJowrQYFo6hFFsJFjKohjm9hU
+GENU4v1g1DWVSGWNdFj9EPX2QT4KwyQlK5Mg/Y8J8R3CPOab7nhczPdDwk2YJsgF
+GyGFhWPsKEaBytSOxzypkIOAUIG0gxUF6fu+FoYXR5SA0I4NjjERw0AptHLEcWzz
+GAcRVMJeSIvHQcEwi63cNotp2+FITIecUo/a2KAQBojBoV1jglKKpKLYAw22cqXp
+WzOsAHHGiQ2MujbSVs9IWi6qBHIhfTqmK+0rXiquVVAxfspRmIQy7DOrxSQpx7mU
+SlItp7LHQOSvJMiLoKTMBjERFYjiICwZSkb5b2C4w4KhchBBPkgVxDejMldax5TL
+WdjzpVSGj+AuYFcJbhNNiMZK+8qmvmDMdEE8cKTLXMmlIwB5XAjXdjWV7B+CZjQJ
+L5iUBluJJ4MRWCOLnsw6zZlsW2ZF+8rmxtYO9lzjzFDVqeWunqmWpvRAZRZdt/Tq
+yifn2zJHjnZOZ3ZvPHL7RyfHNx66c+yhc7M9g7sK8mBj+MF9j/ePej+9dXz9+pnf
+3rv71F3ZM2SHOjHV8/Kmg1a9cPrtH3bcs2RP5tWxGxvDF1cePn//5e0Dl8a2SPjl
+T1J7qfgArc3ZaOLW/Mfzx378esPWlp1T7W82Llf2j088rLpnn+p6t770HZ7M17ct
+j6qjra9fXLG3fmHXh9XJyc5Dn9bv+L3r+6HuVfdmbjq67pWzbPV07dKvk5s7B07z
+6MCa8aZnf55b1vzdyA2rctf7+8698dfo2W9u3nT81Oz2lkcvLPHWkfbWZXz3B8+M
+b/hq54nnT04/ct8Lq197v7L4tuWHr71l6stvu7ZsfuLzmTVNn7X+DQ==
+=pyCx
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/zdtcd
+
+==================================================================
