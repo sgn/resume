@@ -18,6 +18,10 @@ relationship.
 
 Occasionally, there will be some rants.
 
+My GnuPG key is [0xDFB608D858E0F4F8](DFB608D858E0F4F8.asc).
+
+Its fingerprint is: 85F0 E2BD 30F2 2A9E E94A  4092 7D95 3879 560F 17C2
+
 #### Disclaimer:
 
 - I have no idea what kind of craps am I saying.
