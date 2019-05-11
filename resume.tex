@@ -1,4 +1,5 @@
 % (c) 2018 Danh DOAN <congdanhqx@gmail.com>
+% vim: et ts=2 sw=2
 %
 % The template is licensed under the Creative Commons Attribution-ShareAlike 3.0
 % Unported License. To view a copy of this license, visit
@@ -14,11 +15,11 @@
 
 \NewDocumentCommand\email{m}{\href{mailto:#1}{#1}}
 \RenewDocumentCommand\resentry{O{0pt}mm}{
-    \begin{tabular*}{0.9\textwidth}[t]{@{\hspace{#1}}
-            p{5in-#1}@{\extracolsep{\fill}}p{1.0in}}
-        \raggedright #2 & #3
-        \tabularnewline
-    \end{tabular*}
+  \begin{tabular*}{0.9\textwidth}[t]{@{\hspace{#1}}
+    p{5in-#1}@{\extracolsep{\fill}}p{1.0in}}
+    \raggedright #2 & #3
+    \tabularnewline
+  \end{tabular*}
 }
 \def\Plus{\texttt{+}}
 \def\Minus{\texttt{-}}
@@ -41,70 +42,68 @@
 % Resume section heading
 \resheading{Highlights of Qualifications}
 \begin{itemize}
-% This is the freest form resume entry available. It's basically just text.
-\item \resdesc{C}{highly fluent, used occasionally at work.}
-\item \resdesc{\cplusplus{}}{highly fluent, used everyday at work, home in last
-5 years.}
-\item \resdesc{git}{fluent enough to support other colleagues recovering from
-  most of disasters.}
-\item \resdesc{Linux}{proficient, having used full time at home.}
+    % This is the freest form resume entry available. It's basically just text.
+  \item \resdesc{C}{highly fluent, used occasionally at work.}
+  \item \resdesc{\cplusplus{}}{highly fluent, used everyday at work, home in last
+    5 years.}
+  \item \resdesc{git}{fluent enough to support other colleagues recovering from
+    most of disasters.}
+  \item \resdesc{Linux}{proficient, having used full time at home.}
 \end{itemize}
 
 \resheading{Software Development Experience}
-\begin{itemize}
-\item[]
 % Top-level entry for an employer, providing employer, location, and description
 % fields:
 \resemployer[Software Engineer]{\href{https://www.larion.com/}{Larion}}
-	    {Ho Chi Minh, Vietnam}
-  \resjob[Developing module to process data for a financial analysis firm.
-    \begin{itemize}
-	\item Analyse, parse received data, then convert to internal data
-		format.
-	\item Written in \cplusplus{} on Linux
-    \end{itemize}]
-		{Mars}{Now}{Feb. 2019}
+{Ho Chi Minh, Vietnam}
+\resjob[Developing module to process data for a financial analysis firm.
+\begin{itemize}
+  \item Analyse, parse received data, then convert to internal data
+    format.
+  \item Written in \cplusplus{} on Linux
+\end{itemize}]
+{Mars}{Now}{Feb. 2019}
 
 \resemployer[Software Engineer]{\href{https://www.luxoft.com/}{Luxoft Vietnam}}
 {Ho Chi Minh, Vietnam}
 % Indented entry for a job, providing title, start date, end date, and
 % description fields:
-  \resjob[Developing HMI model/view for cars built by a Korean corporation.\\]
-         {Continental GmbH.'s DN8 dashboard}{Dec. 2018}{Aug. 2018}
-  \resjob[Maintain \cplusplus{} widget and animation layer for cars built by a Germany
-    corporation. See my job at Informa Solutions below.\\]
-         {Continental GmbH.'s MQB dashboard}{Aug. 2018}{Jan. 2018}
+\resjob[Developing HMI model/view for cars built by a Korean corporation.\\]
+{Continental GmbH.'s DN8 dashboard}{Dec. 2018}{Aug. 2018}
+\resjob[Maintain \cplusplus{} widget and animation layer for cars built by a Germany
+corporation. See my job at Informa Solutions below.\\]
+{Continental GmbH.'s MQB dashboard}{Aug. 2018}{Jan. 2018}
 
 \resemployer[Software Engineer (on assignment from Luxoft Vietnam)]
-            {\href{http://www.informa.com.sg/}{Informa Solutions}}{Singapore}
-  \resjob[Maintain \cplusplus{} widget and animation layer for cars built by a Germany
-    corporation.
-    \begin{itemize}
-    \item Add features into existing widget and animation upon request
-    \item Corporate with model/view team to investigate and fix bug
-    \item Make some small shell (run on git bash on Windows), and groovy (for
-      Jenkins) scripts to automate the testing tasks.
-    \item Technology: OSEK, \cplusplus{}, Microsoft Visual Studio, git, Jenkins
-    \end{itemize}
-  ]{Continental GmbH's MQB dashboard}{Dec. 2017}{April 2017}
+{\href{http://www.informa.com.sg/}{Informa Solutions}}{Singapore}
+\resjob[Maintain \cplusplus{} widget and animation layer for cars built by a Germany
+corporation.
+\begin{itemize}
+  \item Add features into existing widget and animation upon request
+  \item Corporate with model/view team to investigate and fix bug
+  \item Make some small shell (run on git bash on Windows), and groovy (for
+    Jenkins) scripts to automate the testing tasks.
+  \item Technology: OSEK, \cplusplus{}, Microsoft Visual Studio, git, Jenkins
+\end{itemize}
+]{Continental GmbH's MQB dashboard}{Dec. 2017}{April 2017}
 
 \resemployer[Software Engineer]{\href{https://www.luxoft.com/}{Luxoft Vietnam}}
 {Ho Chi Minh, Vietnam}
-  \resjob[Mentoring Luxoft's new hire, who had just graduated from university.]
-    {Luxoft Internal Project}{March 2017}{April 2016}
-  \resjob[Develop HMI system for car built by a Korean corporation.
-    \begin{itemize}
-    \item Joined in last phase of development
-    \item Run system integration testing
-    \item Fix minor bugs
-    \item Used technology: \cplusplus{}, xml, Perforce p4
-    \end{itemize}
-  ]{Harman-Becker}{March 2016}{Nov. 2015}
+\resjob[Mentoring Luxoft's new hire, who had just graduated from university.]
+{Luxoft Internal Project}{March 2017}{April 2016}
+\resjob[Develop HMI system for car built by a Korean corporation.
+\begin{itemize}
+  \item Joined in last phase of development
+  \item Run system integration testing
+  \item Fix minor bugs
+  \item Used technology: \cplusplus{}, xml, Perforce p4
+\end{itemize}
+]{Harman-Becker}{March 2016}{Nov. 2015}
 
 \resemployer[Software Engineer]{\href{https://www.fpt-software.com/}{FPT
-    Software}}{Ho Chi Minh, Vietnam}
+Software}}{Ho Chi Minh, Vietnam}
 \resjob[Develop software to process RTP stream into segmented video stream.
-  \begin{itemize}
+\begin{itemize}
   \item Used \cplusplus{}11 and boost to develop a system to process
     RTP stream which received from program provider (HBO, CNN,
     etc...) by blacking out, filtering advertisement scene (to
@@ -120,28 +119,27 @@
     Processing System).
   \item Technology: \cplusplus{}11, Boost, Ruby Sinatra, DASH, HLS, RHEL, hardware AES
     encryption (via libcrypto).
-  \end{itemize}
-]{DirecTV}{Oct. 2015}{Nov 2013}
 \end{itemize}
+]{DirecTV}{Oct. 2015}{Nov 2013}
 
 \resheading{Open Source Contribution}
 \begin{itemize}
   \item Improve compatibility for some FLOSS project such as: git, dracut,
-	  etc ...
+    etc ...
   \item Create and update package for Void Linux
 \end{itemize}
 
 \resheading{Education}
 \begin{itemize}
-\item[]
-% The school entry provides name and location fields
+  \item[]
+    % The school entry provides name and location fields
     \resschool{FPT University}{Ho Chi Minh, Vietnam}
-% The degree entry is indented one level and provides a degree, major, date and
-% optional notes field.
-        \resdegree[Graduated as good student]{B.Eng.}{Software Engineer}{Sept. 2013}
-% This is a two-column entry, indented one level and providing a text field and
-% date field.
-%        \ressubentry{Certificate, etc.}{Date}
+    % The degree entry is indented one level and provides a degree, major, date and
+    % optional notes field.
+    \resdegree[Graduated as good student]{B.Eng.}{Software Engineer}{Sept. 2013}
+    % This is a two-column entry, indented one level and providing a text field and
+    % date field.
+    %        \ressubentry{Certificate, etc.}{Date}
 \end{itemize}
 %%\resheading{Academics}
 %%    \begin{itemize}
