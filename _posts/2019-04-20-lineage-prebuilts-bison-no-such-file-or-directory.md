@@ -22,7 +22,7 @@ While I'm trying to run that binary from the interactive session,
 `bash` keep insisting to tell me the file isn't there!
 
 Fortunately, from my experience with other libc implementations,
-I know that binary in Linux doesn't magically run,
+I know that dynamic-linked-binary in Linux doesn't magically run,
 it's _interpretted_ by the libc.
 
     % ldd ./prebuilts/misc/linux-x86/bison/bison
@@ -40,3 +40,15 @@ Here is the fix: Pull my package manager and install the _libc_.
         libgcc_s.so.1 => not found
         libc.so.6 => /usr/lib32/libc.so.6 (0xf7cc7000)
         /lib/ld-linux.so.2 => /usr/lib/ld-linux.so.2 (0xf7fa0000)
+
+---
+
+UPDATE: 2019-05-12:
+
+Not all binary in Linux needed to be interpretted.
+Only the dynamically linked one is needed to be interpretted by its libc.
+The static linked executable one is ready to run without the interpretter.
+It's useful for a clean room environment like initrd, emergency shell,
+package maker, containers, etc...
+
+In fact, I always keep static busybox somewhere to fix my mess.
