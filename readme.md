@@ -9,11 +9,11 @@ categories:
 
 This is the blog of Danh Doan.
 
-He is a normal developer.
+I am a normal developer.
 
-He mostly works with C and C++ in a Linux environments.
+I mostly work with C and C++ in a Linux environments.
 
-Most of things inside this blog is taken from his daily work, life,
+Most of things inside this blog is taken from my daily work, life,
 relationship.
 
 Occasionally, there will be some rants.
