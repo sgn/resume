@@ -13,7 +13,7 @@ pages:
     - bundle install --path .bundle_cache/
   script:
     - JEKYLL_ENV=production bundle exec jekyll build -d public
-    - curl -o public/danh.pdf https://gitlab.com/zdtcd/resume/uploads/b70ff37e1b7616063d227e345566085a/resume.pdf
+    - curl -o public/danh.pdf https://gitlab.com/zdtcd/resume/uploads/c3086558242ca64229c888ed8ddda29f/resume.pdf
   artifacts:
     paths:
       - public
