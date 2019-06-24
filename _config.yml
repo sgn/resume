@@ -9,7 +9,7 @@ author:
 
 # Build settings
 baseurl: /
-github: https://github.com/congdanhqx
+github: https://github.com/zdtcd
 gitlab: https://gitlab.com/zdtcd
 markdown: kramdown
 source: .
