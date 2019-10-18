@@ -13,6 +13,7 @@ pages:
     - bundle install --path .bundle_cache/
   script:
     - JEKYLL_ENV=production bundle exec jekyll build -d public
+    - cp resume/resume.tex public/danh.tex
     - git cat-file blob resume.pdf >| public/danh.pdf
   artifacts:
     paths:
