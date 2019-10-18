@@ -1,14 +1,14 @@
 .PHONY: all
 all: resume.pdf
 
-resume.pdf: resume.tex tucv.sty
+%.pdf: %.tex fullpage.sty
 	pdflatex $<
 	pdflatex $<
 	pdflatex $<
 
-tucv.sty: tucv.ins
+%.sty: %.ins
 	latex $<
 
 .PHONY: clean
 clean:
-	rm -rf resume.aux resume.log resume.out resume.pdf tucv.sty tucv.log
+	rm -rf *.aux *.log *.out *.pdf *.sty *.drv

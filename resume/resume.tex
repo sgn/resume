@@ -1,3 +1,6 @@
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+% (c) 2007-2014 Todd C. Miller <Todd.Miller@sudo.ws> http://www.sudo.ws/todd
 % (c) 2018 Danh DOAN <congdanhqx@gmail.com>
 % vim: et ts=2 sw=2
 %
@@ -9,117 +12,131 @@
 % San Francisco, California, 94105, USA.
 
 \documentclass[letterpaper,11pt]{article}
-\usepackage[pagesetup]{tucv}
-\usepackage[pdfborder={0 0 0}]{hyperref}
-\fancyfoot[C]{Danh DOAN - Résumé - Page \thepage}
 
-\NewDocumentCommand\email{m}{\href{mailto:#1}{#1}}
-\RenewDocumentCommand\resentry{O{0pt}mm}{
-  \begin{tabular*}{0.9\textwidth}[t]{@{\hspace{#1}}
-    p{5in-#1}@{\extracolsep{\fill}}p{1.0in}}
-    \raggedright #2 & #3
-    \tabularnewline
-  \end{tabular*}
-}
+%-----------------------------------------------------------
+\usepackage[empty]{fullpage}
+\usepackage[pdfborder={0 0 0}]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{color}
+\definecolor{mygrey}{gray}{0.80}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Adjust margins to 0.5in on all sides
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-0.5in}
+\setlength{\headsep}{30pt}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{
+  {\large \colorbox{mygrey}
+    {\begin{minipage}{\textwidth}
+      {\textbf{#1 \vphantom{p\^{E}}}}
+    \end{minipage}}}}
+\newcommand{\ressubheading}[4]{
+		\textbf{#1} \hfill #2 \\
+    \textit{#3} \hfill \textit{#4}}
+\newcommand{\resproject}[2]{
+  \textbf{#1:} \textit{#2}}
+
+\newcommand{\email}[1]{\href{mailto:#1}{#1}}
 \def\Plus{\texttt{+}}
 \def\Minus{\texttt{-}}
 \def\cplusplus{C\Plus\Plus}
+%-----------------------------------------------------------
+\pagestyle{fancy}
+\fancyhead[C]{\textbf{\Large Danh DOAN}}
+\fancyfoot[C]{Danh DOAN - Résumé - Page \thepage}
 
 \begin{document}
 
-% Page heading and name/contact info table
-\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
-  \multicolumn{2}{c}{\textbf{\Large Danh DOAN}}\\
-  %Ho Chi Minh city \\ %& \Plus66\Minus66\Minus666\Minus6666\\
-  Ho Chi Minh city & \email{congdanhqx@gmail.com}\\
-  Vietnam  & \url{https://danh.dev}
-\end{tabular*}
+Ho Chi Minh city \hfill \email{congdanhqx@gmail.com}
+
+Vietnam  \hfill \url{https://danh.dev}
 
 \begin{center}
   \Large Software Engineer
 \end{center}
 
-% Resume section heading
 \resheading{Highlights of Qualifications}
 \begin{itemize}
   \item Have critical thinking mindset, solved wide range problems
     with different programming languages included but not limited to
     C, C++, sh, etc...
-    %    \resdesc{C}, \resdesc{\cplusplus{}}, \resdesc{sh}, etc...
   \item Worked and gained good understanding with different version control
     systems like git(1), svn(1).
 \end{itemize}
 
 \resheading{Software Development Experience}
-% Top-level entry for an employer, providing employer, location, and description
-% fields:
-% \resemployer[Software Engineer]
-% {\href{https://www.inspectorio.com/}{Inspectorio}}
-% {Ho Chi Minh, Vietnam}
-% \resjob[Developing API for internal web application.
-% \begin{itemize}
-%   \item Use Python to develop API for web application.
-% \end{itemize}]
-% {}{June 2019}{April 2019}
-
-\resemployer[Software Engineer]{\href{https://www.larion.com/}{Larion}}
-{Ho Chi Minh, Vietnam}
-\resjob[Developing module to process data for a financial analysis firm.
 \begin{itemize}
-  \item Use \cplusplus{} to develop module that processes external data into
-    internal formatted data.
-\end{itemize}]
-{Mars}{Apr. 2019}{Feb. 2019}
+\item \ressubheading{\href{https://www.larion.com/}{Larion}}{Ho Chi Minh city,
+    Vietnam}{Software Engineer}{Feb. 2019 - Apr. 2019}
+  \begin{itemize}
+    \item \resproject{Mars}{Developing module to process data for a financial
+      analysis firm}
+      \begin{itemize}
+        \item Use \cplusplus{} to develop module that processes external
+          data into internal formatted data.
+      \end{itemize}
+  \end{itemize}
 
-\resemployer[Software Engineer]{\href{https://www.luxoft.com/}{Luxoft Vietnam}}
-{Ho Chi Minh, Vietnam}
-% Indented entry for a job, providing title, start date, end date, and
-% description fields:
-\resjob[Developing HMI model/view for cars built by a Korean corporation.\\]
-{Continental GmbH.'s DN8 dashboard}{Dec. 2018}{Aug. 2018}
-\resjob[Maintain \cplusplus{} widget and animation layer for cars built by a Germany
-corporation. See my job at Informa Solutions below.\\]
-{Continental GmbH.'s MQB dashboard}{Aug. 2018}{Jan. 2018}
+\item \ressubheading{\href{https://www.luxoft.com/}{Luxoft Vietnam}}{Ho Chi Minh
+    city, Vietnam}{Software Engineer}{Nov. 2015 - Mar. 2017 \& Jan. 2018 - Dec. 2018}
+  \begin{itemize}
+    \item \resproject{DN8}{Developing HMI model/view for cars built by
+      a Korean corporation}
+      \begin{itemize}
+        \item Worked with OSEK, Embedded C++
+        \item Source code was tracked with git
+      \end{itemize}
+    \item \resproject{MQB}{Maintain \cplusplus{} widget and animation layer
+      for cars built by a Germany manufacture}
+      \begin{itemize}
+        \item Add features into existing widget and animation upon request
+        \item Corporate with model/view team to investigate and fix bug
+        \item Make shell and groovy scripts for testing tasks.
+        \item Worked with OSEK, Embedded C++
+        \item Source code was tracked with git
+      \end{itemize}
+    \item \resproject{DIS2}{Develop HMI system for car built by a Korean
+      corporation}
+      \begin{itemize}
+        \item Ran system integration testing
+        \item Fixed minor bugs
+        \item Used technology: \cplusplus{}, xml, Perforce p4
+      \end{itemize}
+  \end{itemize}
 
-\resemployer[Software Engineer (on assignment from Luxoft Vietnam)]
-{\href{http://www.informa.com.sg/}{Informa Solutions}}{Singapore}
-\resjob[Maintain \cplusplus{} widget and animation layer for cars built by a Germany
-corporation.
-\begin{itemize}
-  \item Add features into existing widget and animation upon request
-  \item Corporate with model/view team to investigate and fix bug
-  \item Make some small shell (run on git bash on Windows), and groovy (for
-    Jenkins) scripts to automate the testing tasks.
-  \item Technology: OSEK, \cplusplus{}, Microsoft Visual Studio, git, Jenkins
+\item \ressubheading{\href{http://www.informa.com.sg/}{Informa
+    Solutions}}{Singapore}{Software Engineer}{April 2017 - Dec. 2017}
+  \begin{itemize}
+    \item \resproject{MQB}{On assignment from Luxoft Vietnam, see above}
+  \end{itemize}
+
+  \newpage
+
+\item \ressubheading{\href{https://www.fpt-software.com/}{FPT
+    Software}}{Software Engineer}{Ho Chi Minh, Vietnam}{Nov. 2013 - Oct. 2015}
+  \begin{itemize}
+    \item \resproject{Video Input Processing}{Develop software to process RTP
+      stream into segmented video stream}
+         \begin{itemize}
+           \item Used \cplusplus{}11 and boost to develop a system to process
+             RTP stream which received from program provider (HBO, CNN,
+             etc...) by blacking out, filtering advertisement scene (to
+             replace it later), packetising, encrypting (with AES\Minus{}256),
+             recording in real\Minus{}time to a format conformed with DASH
+             and/or HLS standard.
+           \item Technology: \cplusplus{}11, Boost, DASH, HLS, RHEL
+         \end{itemize}
+  \end{itemize}
+
 \end{itemize}
-]{Continental GmbH's MQB dashboard}{Dec. 2017}{April 2017}
-
-\resemployer[Software Engineer]{\href{https://www.luxoft.com/}{Luxoft Vietnam}}
-{Ho Chi Minh, Vietnam}
-\resjob[Mentoring Luxoft's new hire, who had just graduated from university.]
-{Luxoft Internal Project}{March 2017}{April 2016}
-\resjob[Develop HMI system for car built by a Korean corporation.
-\begin{itemize}
-  \item Joined in last phase of development
-  \item Run system integration testing
-  \item Fix minor bugs
-  \item Used technology: \cplusplus{}, xml, Perforce p4
-\end{itemize}
-]{Harman-Becker}{March 2016}{Nov. 2015}
-
-\resemployer[Software Engineer]{\href{https://www.fpt-software.com/}{FPT
-Software}}{Ho Chi Minh, Vietnam}
-\resjob[Develop software to process RTP stream into segmented video stream.
-\begin{itemize}
-  \item Used \cplusplus{}11 and boost to develop a system to process
-    RTP stream which received from program provider (HBO, CNN,
-    etc...) by blacking out, filtering advertisement scene (to
-    replace it later), packetising, encrypting (with AES\Minus{}256),
-    recording in real\Minus{}time to a format conformed with DASH
-    and/or HLS standard.
-  \item Technology: \cplusplus{}11, Boost, DASH, HLS, RHEL
-\end{itemize}
-]{DirecTV}{Oct. 2015}{Nov 2013}
 
 \resheading{Other Development Experience}
 \begin{itemize}
@@ -131,43 +148,7 @@ Software}}{Ho Chi Minh, Vietnam}
 \resheading{Education}
 \begin{itemize}
   \item[]
-    % The school entry provides name and location fields
-    \resschool{FPT University}{Ho Chi Minh, Vietnam}
-    % The degree entry is indented one level and provides a degree, major, date and
-    % optional notes field.
-    \resdegree[Graduated as good student]{B.Eng.}{Software Engineer}{Sept. 2013}
-    % This is a two-column entry, indented one level and providing a text field and
-    % date field.
-    %        \ressubentry{Certificate, etc.}{Date}
+    \ressubheading{FPT University}{Ho Chi Minh, Vietnam}{B.Eng. in Software
+    Engineer}{Sept. 2013}
 \end{itemize}
-%%\resheading{Academics}
-%%    \begin{itemize}
-% This provides a top-level bold item and a description field.
-%%     \item[] \resdesc{Instructor}{Course 1, Course 2}
-%%     \item[] \resdesc{Teaching Assistant}{Course 1}
-%%     \item[] \resdesc{Referee}{Journal 1, Conference 1}
-%%     \item[] \resdesc{Information Assurance Coursework}{Course 1, Course 2}
-%% \end{itemize}
-
-% This is a section for conferences.
-%% \resheading{Conferences}
-%% \begin{itemize}
-%%     % Major conference entry: provides name and role fields
-%%     \item[] \resconference{Major conference name}{Role (dates)}
-%%     % Subconference entry (e.g. workshop, session, etc.): provides name and role
-%%     % fields.
-%%         \ressubconference{Workshop or session name}
-%%         {Role (dates)}
-%% \end{itemize}
-
-% This is a section for publications
-% In a future version, BiBTeX integration is probably a desired feature, but
-% for now there is just a text entry type called resbib.
-%% \footnotetext[1]{Denotes a peer-reviewed publication}
-%% \resheading{Publications and Presentations}
-%% \begin{itemize}
-%% % This item provides article title (bolded) and rest-of-citation fields.
-%% \item[] \resbib{``Article title''\footnotemark[1]}{Paper at Conference, Year.
-%%                 Authors.}
-%% \end{itemize}
 \end{document}
