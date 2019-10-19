@@ -11,7 +11,7 @@ I hereby claim:
 
   * I am an admin of https://danh.dev
   * I am zdtcd (https://keybase.io/zdtcd) on keybase.
-  * I have a public key with fingerprint 85F0 E2BD 30F2 2A9E E94A  4092 7D95 3879 560F 17C2
+  * I have a public key with fingerprint B35C 3357 8AD6 DA57 3ED4  1B69 2B3D 09F7 702F 46E8
 
 To do so, I am signing this object:
 
@@ -19,21 +19,21 @@ To do so, I am signing this object:
   "body": {
     "key": {
       "eldest_kid": "01010e13fb1e5cb36468ad12c286145a5e49a6940647dc11a19f71c5d883680db5c70a",
-      "fingerprint": "85f0e2bd30f22a9ee94a40927d953879560f17c2",
+      "fingerprint": "b35c33578ad6da573ed41b692b3d09f7702f46e8",
       "host": "keybase.io",
-      "key_id": "7d953879560f17c2",
-      "kid": "01010e13fb1e5cb36468ad12c286145a5e49a6940647dc11a19f71c5d883680db5c70a",
+      "key_id": "2b3d09f7702f46e8",
+      "kid": "011628c49088fbfcc1efd9695aaae5453bc0324455ce06395cbda5c611c8dbc56f690a",
       "uid": "45b8159adb8e5f865d5171c18b532a19",
       "username": "zdtcd"
     },
     "merkle_root": {
-      "ctime": 1557359697,
-      "hash_meta": "f504e200d1b319fd98e8c8368696cd030e58b0f31d8ec777fb27da085ebf32e3",
-      "seqno": 5332332
+      "ctime": 1571481212,
+      "hash_meta": "c2af2cf67cfa9839e594e99c51393d5a46db895d08f13eb2c171c3d4d741fe90",
+      "seqno": 8238912
     },
     "revoke": {
       "sig_ids": [
-        "9f23a0ba88682149ab5e4694f4f508880cd816efe2d4c59af91de0a9a52e98420f"
+        "7102e7b57ee96384a176a76deef0a5bd083db8ea5f98aaf0d26591569a88526e0f"
       ]
     },
     "service": {
@@ -43,10 +43,10 @@ To do so, I am signing this object:
     "type": "web_service_binding",
     "version": 1
   },
-  "ctime": 1557359691,
+  "ctime": 1571481215,
   "expire_in": 157680000,
-  "prev": "167ccd1d8ba4e14dba25f55f1df7d287b99e0a56e3c494cac3be06abb424f8c9",
-  "seqno": 7,
+  "prev": "534efe95ea49ee61e4f06f41b6e050e27730e08c6604a4b3550b6bbb527be5e4",
+  "seqno": 24,
   "tag": "signature"
 }
 
@@ -54,26 +54,22 @@ which yields the signature:
 
 -----BEGIN PGP MESSAGE-----
 
-owGtk11oHFUUx3djYmKhthRNUSnasZaKsb13Zu7MvdtWUPKgoJYUitAmbu/HubvT
-JDubmcma3ZAU0oBKEev3g4pdNamytAhtzYNWoqiktoRWKdpKW1ErxuBHwYcqBb0T
-WgTx0ZmBYe78zzn/8zv37ll8TaYt+/TeP+blizMT2WNzItP9RV9h2BKhqlq5YasX
-Fl7QpyBO8r2BsnIWwuYG7GiBgUjheK5HucK2tKmHXcIJuIx7zEWe6yuJMcdM+1gS
-RanjUaQEkT7iVoelg1IBonIUlBKTlhKNwBbKQdq2OQNgLncRs33FiEN9RjyksS9t
-E1gM4zTCmBM8hrVBaNbMR37B3n/o/2ffgwvpXCIoJowrQYFo6hFFsJFjKohjm9hU
-GENU4v1g1DWVSGWNdFj9EPX2QT4KwyQlK5Mg/Y8J8R3CPOab7nhczPdDwk2YJsgF
-GyGFhWPsKEaBytSOxzypkIOAUIG0gxUF6fu+FoYXR5SA0I4NjjERw0AptHLEcWzz
-GAcRVMJeSIvHQcEwi63cNotp2+FITIecUo/a2KAQBojBoV1jglKKpKLYAw22cqXp
-WzOsAHHGiQ2MujbSVs9IWi6qBHIhfTqmK+0rXiquVVAxfspRmIQy7DOrxSQpx7mU
-SlItp7LHQOSvJMiLoKTMBjERFYjiICwZSkb5b2C4w4KhchBBPkgVxDejMldax5TL
-WdjzpVSGj+AuYFcJbhNNiMZK+8qmvmDMdEE8cKTLXMmlIwB5XAjXdjWV7B+CZjQJ
-L5iUBluJJ4MRWCOLnsw6zZlsW2ZF+8rmxtYO9lzjzFDVqeWunqmWpvRAZRZdt/Tq
-yifn2zJHjnZOZ3ZvPHL7RyfHNx66c+yhc7M9g7sK8mBj+MF9j/ePej+9dXz9+pnf
-3rv71F3ZM2SHOjHV8/Kmg1a9cPrtH3bcs2RP5tWxGxvDF1cePn//5e0Dl8a2SPjl
-T1J7qfgArc3ZaOLW/Mfzx378esPWlp1T7W82Llf2j088rLpnn+p6t770HZ7M17ct
-j6qjra9fXLG3fmHXh9XJyc5Dn9bv+L3r+6HuVfdmbjq67pWzbPV07dKvk5s7B07z
-6MCa8aZnf55b1vzdyA2rctf7+8698dfo2W9u3nT81Oz2lkcvLPHWkfbWZXz3B8+M
-b/hq54nnT04/ct8Lq197v7L4tuWHr71l6stvu7ZsfuLzmTVNn7X+DQ==
-=pyCx
+owFtU8trFlcU/2J9pELBVXZdOAupEOJ9nfv4/gBXol1lI+HjPs5NhiQznzOTmJgE
+BDeCmywkGxdVBMH4BxQKLaGLILgyUCylhVJEEVyUdtOlZz4MgnRmMcyZc36vOXf3
+qy8G0zOXDg4PTrxauDr14l0YLOy/ebhVhDptFsOtYhknD1xJ2Haj5TIVw4JxupHL
+HDhCDFIrbX3iIgqruQIPqJzXTjGtTIqce+6y4RGStVJblgJEw3wxW+SyWsRm3JRV
+R7BBQpQSDGHp5MFITIoH7USQiRGCYSIrjZYGl+q2nyBxwbc4V9ZUo5fRRN7/9B/r
+5lrYqByzNoccI8ecnHbgvUdQIENkUigFEJFp6cgb6Yia82hTiKCzdhPdaxM4BcFy
+cD4Fi5CthgScbHIbQAry3De22FR+Fan7VupiKnZmi1Vslldw1NR11ycbu7L/zsFw
+Zbnggtz5dmm0ip2nsSh8FjFrE7N3VjoEp9C5CFw6mcArTfQOErOZSwwi9hJkUsko
+ntExEtHijaouhlZI67ggBQ2u18vYk7flImXWFsPrheFMoAkHYzCITkurPDfaG50Q
+M/MQiEL2Vj1kZ73PLAkNjoN23loQGlkuFnZ6uma9jBP4/jd9tJ98tTSXcJ30jJu6
+q2O9QtWlrhu3wz6VbnPct93EMPoIMApllWhBaGIdm7asK0qJOj8PDGYL3BiXDY7K
+alKmFaOr5yG6YQFSISUB6JVD1BxVZjr3m4UMGApjJENmo9ZMeUVLCCzoEAIIE5BW
++VOCQpFOv0iYlFvlu7UGi52zd9dODmamB1/PnD/569FG+Riv/fD49uE/x2fq1In+
+QA3OfnnuuPL89NTgPTza/f3d9oX738w/u/j9T9/+9fa3v0dPDy/8t/LL65+PZq5O
+Df6cv/zd0f6Dbf9k7/WPG+Zw6865vX/vXZk9/fJV84e+eOYD
+=pong
 -----END PGP MESSAGE-----
 
 And finally, I am proving ownership of this host by posting or
