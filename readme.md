@@ -18,9 +18,9 @@ relationship.
 
 Occasionally, there will be some rants.
 
-My GnuPG key is [0xDFB608D858E0F4F8](DFB608D858E0F4F8.asc).
+My GnuPG key is [0x2B3D09F7702F46E8](2B3D09F7702F46E8.asc).
 
-Its fingerprint is: 85F0 E2BD 30F2 2A9E E94A  4092 7D95 3879 560F 17C2
+Its fingerprint is: B35C 3357 8AD6 DA57 3ED4  1B69 2B3D 09F7 702F 46E8
 
 My resume in [pdf format](danh.pdf) or [tex format](danh.tex).
 

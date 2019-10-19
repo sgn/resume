@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The saga of my GnuPG key
+title: The saga of my OpenPGP key
 comments: false
 categories:
   - tips
@@ -10,7 +10,7 @@ tags:
 ---
 
 In the last 12 months, my most active time with FLOSS.
-I've used 4 GnuPG keys (5 if you wanna count the 0x10BD5567).
+I've used 4 OpenPGP keys (5 if you wanna count the 0x10BD5567).
 
 [The first one][1] was revoked since I think 2048 bits for master key is too small.
 
@@ -34,7 +34,7 @@ and that command tried to erase my `/`.
 No need to say, I'm a lazy person, I didn't backup my main computer,
 and I didn't save my master key in safe vault.
 
-I lost all my GnuPG keys in the process.
+I lost all my OpenPGP keys in the process.
 Luckily, I have all sub-secret-keys in my phone
 for password decryption and email verification.
 
@@ -44,10 +44,18 @@ hence, please find this blog and verify my ownership with both 2 keys by:
 
 P/S: Lesson for me, always have backup.
 
+---
+
+Update 2019-10-19: I decided to use Ed25519 instead of RSA for smaller
+signature. The new key could be found [here][7]. Alternately, you could find
+it from [Keybase][keybase].
+
 [1]: http://keys.gnupg.net/pks/lookup?op=vindex&fingerprint=on&search=0xE01C514ED3A44E7A
 [2]: http://keys.gnupg.net/pks/lookup?op=vindex&fingerprint=on&search=0x1C668DE30F63F2AE
 [3]: http://keys.gnupg.net/pks/lookup?op=vindex&fingerprint=on&search=0x554961070A88B964
 [4]: http://keys.gnupg.net/pks/lookup?op=vindex&fingerprint=on&search=0x7D953879560F17C2
 [5]: DFB608D858E0F4F8.asc
 [6]: DFB608D858E0F4F8.asc.gpg
+[7]: 2B3D09F7702F46E8.asc
+[keybase]: https://keybase.io/zdtcd
 [xbps]: https://github.com/void-linux/void-packages/pull/11005
