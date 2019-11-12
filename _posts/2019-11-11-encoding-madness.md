@@ -45,7 +45,7 @@ surrogate pairs to form high-codepoint characters.
 UTF-8
 -----
 
-- This is the only encoding that works.
+- The encoding that works.
 
 - But, people have a lot of legacy to support.
 Moving to utf-8 may break their system (looking at you, Windows).
