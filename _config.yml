@@ -9,8 +9,8 @@ author:
 
 # Build settings
 baseurl: /
-github: https://github.com/zdtcd
-gitlab: https://gitlab.com/zdtcd
+github: https://github.com/sgn
+gitlab: https://gitlab.com/sgn
 markdown: kramdown
 source: .
 destination: ./_site
